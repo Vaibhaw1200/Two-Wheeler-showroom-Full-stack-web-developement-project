@@ -1,0 +1,613 @@
+/*heading*/
+
+  
+.dynamic-heading {
+    body {
+        margin: 0;
+        padding: 0;
+      }
+    background-image: linear-gradient(45deg, rgb(218, 4, 4), white);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .text-red {
+    color: rgb(228, 0, 0);
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .text-white {
+    color: white;
+    position: absolute;
+    z-index: 2;
+  }
+   /*logo*/
+   .containerrr {
+    margin: 0;
+        padding: 0;
+        height: 100%;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .top-right {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+    
+  /*scrolling*/
+
+  
+  
+
+  .marquee-container {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: Arial, sans-serif;
+    
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .marquee-text {
+    color: green;
+    white-space: nowrap;
+    animation: marqueeAnimation 15s linear infinite;
+  }
+
+  @keyframes marqueeAnimation {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  /*nav buttons*/
+  #navbar {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly along the main axis */
+    width: 100%; /* Cover full width of the screen */
+  }
+  
+  .navbutton {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px; /* Increase padding for better touch targets */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .navbutton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbutton:focus {
+    background-color: lightgray;
+  }
+  
+  /*poster*/
+  
+
+.poster {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+   
+}
+ /*home*/
+ .about{
+    background-image: linear-gradient(45deg, rgb(218, 4, 4), rgb(222, 119, 119));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: antiquewhite;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: relative;;
+ }
+
+ .para {
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Add hover effect */
+  .para:hover {
+    color: #E44D26; /* Change text color on hover */
+  }
+  
+  /* Add animation effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .para.animate {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+    
+  /*new launch*/
+  .newl{
+    background-image: linear-gradient(45deg, rgb(218, 4, 4), rgb(222, 119, 119));
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: antiquewhite;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: relative;;                                      
+  }
+ 
+
+.gallery {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.description {
+    padding: 15px;
+}
+
+.description h3 {
+    margin-bottom: 10px;
+}
+
+.description p {
+    color: #666;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+/*happy customers*/
+
+
+
+
+
+
+.popup {
+  align-items: center;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #ff0b0b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  
+}
+
+.popup-content {
+  text-align: center;
+  -webkit-text-fill-color: #ff0b0b;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: rgb(172, 167, 234);
+  color: white; /* Changing text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centering the button horizontally */
+}
+
+button:hover {
+  background-color: rgb(97, 226, 18);
+  color: black;
+}
+button {
+  background-color: rgb(172, 167, 234);
+  color: white; /* Changing text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centering the button horizontally */
+}
+button {
+  
+  background-color:rgb(172, 167, 234);
+  color: white; /* Changing text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centering the button horizontally */
+}
+button:focus {
+  background-color: rgb(129, 230, 6);
+}
+/*happy customers*/
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+}
+
+.form-half {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.form-half label {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.form-half input[type="text"],
+.form-half input[type="email"],
+.form-half textarea {
+  padding: 10px;
+  border: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#cbutton {
+  background-color: red;
+  color: white; /* Changing text color to white */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centering the button horizontally */
+}
+  
+
+
+.image-half {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-half img {
+  max-width: 100%;
+  height: auto;
+}
+.confirm-message {
+  display: none;
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #4CAF50;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.confirm-message h2 {
+  margin-top: 0;
+}
+
+.confirm-message p {
+  margin-bottom: 10px;
+}
+
+.confirm-message button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.confirm-message button:hover {
+  background-color: #005f7f;
+}
+/*contact deails*/
+
+.detail-card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.detail-card h3 {
+  margin: 0;
+  padding: 0;
+}
+.detail-card p {
+  margin: 0;
+  padding: 0;
+}
+.detail-card .icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1px;
+}
+.detail-card .icons img {
+  width: 25px;
+  height: 25px;
+}
+.return-home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.return-home-button:hover {
+  background-color: #45a049;
+}
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+  /* Styles for screens smaller than 600px (typical mobile devices) */
+
+  /* Adjust the dynamic-heading */
+  .dynamic-heading {
+    height: 20vh; /* Decrease the height for better visibility on smaller screens */
+    background-image:  linear-gradient(45deg, rgb(218, 4, 4), white); /* Remove the background image or replace it with a simpler one */
+    justify-content: flex-start; /* Align content to the top of the heading */
+  }
+
+  .text-red {
+    color: rgb(228, 0, 0);
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .text-white {
+    color: white;
+    position: absolute;
+    z-index: 2;
+  }
+  /* Adjust the scrolling marquee */
+  .marquee-container {
+    display: none; /* Hide the scrolling marquee on small screens */
+  }
+
+  /* Adjust the navigation buttons */
+  #navbar {
+    padding: 5px; /* Decrease padding for smaller buttons */
+  }
+
+  .navbutton {
+    font-size: 14px; /* Decrease font size for smaller buttons */
+    padding: 3px 8px; /* Adjust padding for smaller buttons */
+  }
+
+  /* Adjust the poster */
+  .poster {
+    margin: 10px 0; /* Add some margin for better spacing */
+  }
+
+  /* Adjust the "About" section */
+  .about {
+    height: auto; /* Let the height adjust dynamically based on content */
+  }
+
+  .para {
+    padding: 10px; /* Decrease padding for smaller paragraphs */
+  }
+
+  /* Adjust the "New Launch" section */
+  .newl {
+    height: auto; /* Let the height adjust dynamically based on content */
+  }
+
+  /* Adjust the gallery cards */
+  .card {
+    width: 100%; /* Make cards occupy full width */
+    margin: 10px 0; /* Add some margin for better spacing */
+  }
+
+  /* Adjust the contact details */
+  .detail-card {
+    width: 100%; /* Make cards occupy full width */
+    margin: 10px 0; /* Add some margin for better spacing */
+  }
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  /* Adjust the form-half and image-half to take full width */
+  .form-half,
+  .image-half {
+    flex: 1;
+    width: 100%;
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  /* Adjust form input fields */
+  .form-half input[type="text"],
+  .form-half input[type="email"],
+  .form-half textarea {
+    width: calc(100% - 20px); /* Adjust input width for padding */
+  }
+  
+  /* Center the submit button */
+  #cbutton {
+    display: block;
+    margin: 20px auto; /* Center the button */
+  }
+  
+  /* Reduce padding for image-half */
+  .image-half {
+    padding: 10px;
+  }
+  .popup {
+    align-items: center;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ff0b0b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .popup-content {
+    text-align: center;
+    -webkit-text-fill-color: #ff0b0b;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  button {
+    color: white;
+    text-decoration: wavy;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 5px;
+    align-self: auto;
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+
+  button {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: auto;
+  }
+
+  button:focus {
+    background-color: rgb(141, 237, 23);
+  }  
+}
